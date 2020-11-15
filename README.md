@@ -8,3 +8,7 @@ Simple python package installer via command line.
 `python3 PackageInstaller.py`
 
 *well, that's it, pretty simple :/*
+
+**Video**
+
+https://twitter.com/SkidTheNoob/status/1328054819005886474
