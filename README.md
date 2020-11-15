@@ -11,4 +11,6 @@ Simple python package installer via command line.
 
 **Video**
 
-https://twitter.com/SkidTheNoob/status/1328054819005886474
+https://twitter.com/SkidTheNoob/status/1328056438850277377
+
+*Enjoy and happy coding :)*
