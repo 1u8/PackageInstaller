@@ -29,6 +29,8 @@ t.start()
 time.sleep(10)
 done = True	
 
+#This is where the packages that would be installed are, feel free to add more ;/
+
 required = {'numpy','pandas','toml','aiohttp-socks','apparmor','numpy','helpdev','onboard','pillow','pycparser','pyperclip','pynacl','protonvpn-cli','astroid','pyaes'} 
 installed = {pkg.key for pkg in pkg_resources.working_set}
 missing = required - installed
@@ -54,7 +56,7 @@ def animate():
 
 t = threading.Thread(target=animate)
 t.start()
-
+#Lists all installed user packages
 time.sleep(5)
 done = True	
 installed_packages = pkg_resources.working_set
