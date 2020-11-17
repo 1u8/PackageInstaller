@@ -10,7 +10,7 @@ import itertools
 
 print('[-]---------------PYTHON PACKAGE INSTALLER---------------[-]')
 print('\n[-Developed by @1u8 on github/@SkidTheNoob on Twitter.-]')
-print('[-] Installing packages (This might take some time) [-]')
+print('\n[-] Installing packages (This might take some time) [-]')
 
 
 done = False
@@ -21,7 +21,8 @@ def animate():
         sys.stdout.write('\r[+] Loading ' + c)
         sys.stdout.flush()
         time.sleep(0.1)
-    sys.stdout.write('\r[!] Finished! [!]    ')
+    sys.stdout.write('\r[!] New packages found [!] ')
+    print('\n[+] Installing.. [+]')
 
 t = threading.Thread(target=animate)
 t.start()
@@ -29,9 +30,7 @@ t.start()
 time.sleep(10)
 done = True	
 
-#This is where the packages that would be installed are, feel free to add more ;/
-
-required = {'numpy','pandas','toml','aiohttp-socks','apparmor','numpy','helpdev','onboard','pillow','pycparser','pyperclip','pynacl','protonvpn-cli','astroid','pyaes'} 
+required = {'numpy','pandas','toml','aiohttp-socks','apparmor','numpy','helpdev','onboard','pillow','pycparser','pyperclip','pynacl','protonvpn-cli','astroid','pyaes','whoosh','regex','celery','pycrypto','setuptools-git','ladon'} 
 installed = {pkg.key for pkg in pkg_resources.working_set}
 missing = required - installed
 
@@ -39,11 +38,11 @@ missing = required - installed
 if missing:
     subprocess.check_call([sys.executable, '-m', 'pip', 'install',*missing])
 
-print('\n[!] Packages installed succesfully! [!] ')
+print('\n[!] No new packages! [!] ')
 
 print('\nNow listing all installed packages..')
 
-print('\n[=]-Currently loading Installed User Packages-[=]')
+print('\n[+] Currently loading Installed User Packages-[=]')
 done = False
 def animate():
     for c in itertools.cycle(['[|]', '[/]', '[-]', '[\\]']):
@@ -56,7 +55,7 @@ def animate():
 
 t = threading.Thread(target=animate)
 t.start()
-#Lists all installed user packages
+
 time.sleep(5)
 done = True	
 installed_packages = pkg_resources.working_set
