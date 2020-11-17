@@ -3,6 +3,13 @@ Simple python package installer via command line, this is mostly a concept for a
 
 ***This is mostly being used as a concept but feel free to add updated packages to the source code :)***
 
+**Requires python3-pip**
+
+Here are the installation guides.
+
+https://pip.pypa.io/en/stable/installing/
+
+
 **Usage**
 
 `python3 PackageInstaller.py`
